@@ -1,3 +1,7 @@
 import validator from './validator.js';
 
-console.log(validator);
+const btnValidation= document.getElementById("btnValidation")
+btnValidation.addEventListener("click", ()=> {
+
+  validator.validate("123456")
+})
