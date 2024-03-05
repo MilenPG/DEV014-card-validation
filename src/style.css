@@ -59,6 +59,16 @@ input, button {
     padding: 0.5%;
     border-radius: 10px;
     border-style: solid;
+    color: white;
+}
+    
+#donation {
+    color:#0E0E0E;    
+}
+
+
+p {
+    font-weight: bold;
 }
 
 .validation-btn {
@@ -67,9 +77,7 @@ input, button {
     border-radius: 20px;
     border-style: none;
     background-color: #8B3282;
-    color: whitesmoke;
     font-weight: bold;
-
 }
 
 .valid-card {
