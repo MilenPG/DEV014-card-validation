@@ -10,9 +10,12 @@ document.getElementById("cardNumber").addEventListener("input", function(){
 
 //1. Que al escuchar el "click", el botón ejecute isValid... 
 btnValidation.addEventListener("click", ()=> {
-  //2. if...> innerHTML: "¡Tu tarjeta y suscripción asociada ha sido validada exitosamente!"
-  validator.isValid(cardNumber.value) // hacer if, invocando a validator que debe retornar TRUE o FALSE.
+  if (validator.isValid(cardNumber.value)===true) {
+    document.getElementById("validationSpan").innerHTML= `<span class="valid-card">¡Tu tarjeta y suscripción asociada ha sido validada exitosamente!</span>` //2. if...> innerHTML: "¡Tu tarjeta y suscripción asociada ha sido validada exitosamente!"
+  } else {
+    document.getElementById("validationSpan").innerHTML= `<span class="invalid-card">Tarjeta inválida. Por favor, chequea e intentalo otra vez.</span>`} //3. else...> innerHTML: "Tarjeta inválida. Por favor,chequea e intentalo otra vez.
+ 
 
-  //3. else...> innerHTML: "Tarjeta inválida. Por favor,chequea e intentalo otra vez.
+  
 
 }) 

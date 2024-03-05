@@ -72,6 +72,16 @@ input, button {
 
 }
 
+.valid-card {
+ color: #038C00;
+ font-weight: bold;
+}
+
+.invalid-card {
+    color: #B70000;
+    font-weight: bold;
+}
+
 footer {
     font-size: 0.8rem;
     margin-top: 2%;

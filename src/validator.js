@@ -1,12 +1,12 @@
 const validator = {
 
   isValid: (inputCardNumber) => {
-    const luhnArr= []
-    //const byTwo= []
+    const luhnArr= [];
+    let luhnSum = 0;
     const cardNumber = inputCardNumber.split('').map(num=> Number(num)) // 1. Transformar string a array
     for (let i=cardNumber.length-1; i>=0; i--) { //2. Recorrer array inversamente
-      if (cardNumber[i] % 2 ===0) { //3. Si la posición es par...
-        if (cardNumber[i]*2>10) { //4. Multiplicar valor de índice*2 y si el resultado es >10, SUMAR DIGITOS Y LUEGO PUSH AL luhnArr
+      if (cardNumber[i] % 2 ===0) { //3. Si la posición del elemento es par...
+        if (cardNumber[i]*2>=10) { //4. Multiplicar valor de índice*2 y si el resultado es >10, SUMAR DIGITOS Y LUEGO PUSH AL luhnArr
           const number = cardNumber[i]*2
           luhnArr.push(number.toString().split('').reduce(function(r, n) { return r + parseInt(n) }, 0)) //4.1 OPCIÓN 1 SUMA DÍGITOS Y PUSH AL luhnArr
           
@@ -21,19 +21,22 @@ const validator = {
         }
       } else {
         luhnArr.push(cardNumber[i])
-      } // else if (campo vacío) {throw Error} ????? 
-      let luhnSum = 0; //6. Suma final
+      } // else if (campo vacío) {throw Error} ?????  
       for (let i=0; i<luhnArr.length; i++) {
-        luhnSum += luhnArr[i]
+        luhnSum+= luhnArr[i]
       }
-      console.log("Array para suma final: "+luhnArr)
-      console.log("Validar: "+luhnSum)
-      if (luhnSum>9 && luhnSum % 10===0){ 
-        console.log(true+" Tarjeta válida!") //7.BUSCAR DONDE RETORNAR VALORES DE LUHNSUM Y BOOLEANS!
-      } else { 
-        console.log(false+" Tarjeta inválida")}
+      console.log(luhnArr)
+      console.log("Resultado suma final: "+luhnSum) //6. Suma final
     }
-    console.log("Verificando: "+cardNumber)
+    if (luhnSum>9 && luhnSum % 10===0){ 
+      return true //7. RETORNO DE BOOLEANS
+    } else { 
+      return false
+    }
+    /*console.log("Verificando: "+cardNumber)
+    console.log("Array para suma final: "+luhnArr)
+    console.log("Validar: "+luhnSum)*/
+    
   },
 
   /*validator.maskify(creditCardNumber): creditCardNumber es un string con el número de tarjeta y esta función debe 
