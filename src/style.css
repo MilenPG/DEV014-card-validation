@@ -12,8 +12,9 @@ body {
     align-items: center;
     display: flex;
     flex-direction: column;
-    background-image: -webkit-radial-gradient(purple,violet,white);
+    /*background-image: -webkit-radial-gradient(purple,violet,white);*/
     /*background-image: url("https://github.com/MilenPG/DEV014-card-validation/blob/main/src/imgs/fondocherypupis.jpeg?raw=true");*/
+    background-image: url("https://raw.githubusercontent.com/MilenPG/DEV014-card-validation/main/src/imgs/fondopupu.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }

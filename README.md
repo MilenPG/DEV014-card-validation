@@ -49,15 +49,16 @@ Personas que se interesan por los animales y desean aportar de alguna forma con 
 ### Proceso de prototipado.
 
 * Prototipo de baja fidelidad:
-![Prototipo grafito](https://github.com/MilenPG/DEV013-text-analyzer/blob/main/docs/images/analizador_de_texto_en_navegador.png "Text analyzer demo")
+![Prototipo grafito](src\imgs\prototipo1.jpeg)
 
 * Prototipo 1 de alta fidelidad (figma):
-![Prototipo figma 1](https://github.com/MilenPG/DEV013-text-analyzer/blob/main/docs/images/analizador_de_texto_en_navegador.png "Text analyzer demo")
+![Prototipo figma 1](https://github.com/MilenPG/DEV014-card-validation/blob/main/src/imgs/proto1.1.png?raw=true)
+![Prototipo figma 1.2](https://github.com/MilenPG/DEV014-card-validation/blob/main/src/imgs/proto1.2.png?raw=true)
 
 *Luego del feedback recibido, se decidió concentrar todo en una sola pantalla que enfatizara la sección del input con el validador.*
 
 * Prototipo 2 y final de alta fidelidad (figma): 
-![Prototipo figma 2](https://github.com/MilenPG/DEV013-text-analyzer/blob/main/docs/images/analizador_de_texto_en_navegador.png "Text analyzer demo")
+![Prototipo figma 2](https://github.com/MilenPG/DEV014-card-validation/blob/main/src/imgs/protofinal.png?raw=true)
 
 ## 4. Herramientas utilizadas.
 Este proyecto fue desarrollado en HTML, CSS y JavaScript.
