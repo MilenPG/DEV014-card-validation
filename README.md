@@ -49,7 +49,7 @@ Personas que se interesan por los animales y desean aportar de alguna forma con 
 ### Proceso de prototipado.
 
 * Prototipo de baja fidelidad:
-![Prototipo grafito](src\imgs\prototipo1.jpeg)
+![Prototipo grafito](https://github.com/MilenPG/DEV014-card-validation/blob/main/src/imgs/prototipo1.jpeg?raw=true)
 
 * Prototipo 1 de alta fidelidad (figma):
 ![Prototipo figma 1](https://github.com/MilenPG/DEV014-card-validation/blob/main/src/imgs/proto1.1.png?raw=true)
