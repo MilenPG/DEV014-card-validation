@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patitas en red  ฅ^•ﻌ•^ฅ</title>
+    <link rel="icon" href="https://github.com/MilenPG/DEV014-card-validation/blob/main/src/imgs/paw_2865755.png?raw=true">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ultra&display=swap">
+  </head>
+  <body>
+    <header>¡Necesitamos tu ayuda!</header>
+    <main>
+      <div class="intro">
+        ¡Hola! Somos una agrupación de personas cualquiera intentando colaborar con la vida de perros y gatos en situación de abandono.<br>Aportando mensualmente, podrás ayudar a costear necesidades tales como alimento, desparasitación, vacunas, controles veterinarios, juguetes, elementos de aseo y más.<br>Solo debes llenar los campos a continuación ¡y listo!
+      </div>
+      <div class="suscribe">
+        <h2>Suscripción de pago:</h2>
+        <label for="donation">Aporte mensual (CLP$):</label>
+        <input class="input" id="donation" type="text" placeholder="ej: $10.000">
+        <label for="cardNumber">N° de tarjeta de crédito:</label>
+        <input class= "input" id="cardNumber" type="text" placeholder="ej: #### #### #### 4321">
+        <p id="maskedNumber"></p>
+        <button class="validation-btn" id="btnValidation">VALIDAR PAGO</button>
+        <span id="validationSpan"></span>
+      </div>
+    </main>
+    <footer>&copy; 2024 - Milen P. G.
+    </footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
